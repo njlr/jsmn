@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'jsondump',
+  srcs = [
+    'jsondump.c',
+  ],
+  deps = [
+    '//:jsmn',
+  ],
+)
+
+cxx_binary(
+  name = 'simple',
+  srcs = [
+    'simple.c',
+  ],
+  deps = [
+    '//:jsmn',
+  ],
+)
